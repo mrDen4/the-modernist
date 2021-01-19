@@ -1,0 +1,41 @@
+.header {
+    background: #290000;
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav__item {
+            margin-right: 20px;
+        }
+
+        .nav__link {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: .3s;
+
+            &:hover {
+                background: $green;
+                padding: 13px 18px;
+                border-radius: 10px;
+            }
+
+            &--active {
+                background: $green;
+                padding: 13px 18px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
